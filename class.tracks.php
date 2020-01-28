@@ -1,5 +1,5 @@
 <?php
-class Stocks{
+class Track{
 	public $db;
 	
 	public function __construct(){
@@ -10,8 +10,8 @@ class Stocks{
 		}
 	}
 	
-	public function get_stocks(){
-		$sql = "SELECT * FROM tbl_stocks";
+	public function get_track(){
+		$sql = "SELECT * FROM tbl_music";
 		$result = mysqli_query($this->db,$sql);
 		while($row = mysqli_fetch_assoc($result)){
 			$list[] = $row;
@@ -20,3 +20,4 @@ class Stocks{
 	}
 	
 }
+?>
