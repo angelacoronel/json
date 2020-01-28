@@ -1,5 +1,5 @@
 <?php
-$json = file_get_contents('http://192.168.64.2/json/json-1.php');
+$json = file_get_contents('https://coronel-app.herokuapp.com/json-1.php');
 
 $data = json_decode($json,true);
 $list = $data['Tracks'];
