@@ -11,9 +11,9 @@ foreach($list as $value){
     ?>
     <ul>
         <h2><?php echo $value['title'];?></h2>
-        <li><?php echo $value['artist'];?></li>
-        <li><?php echo $value['genre'];?></li>
-        <li><?php echo $value['album'];?></li>
+        <li>Artist: <?php echo $value['artist'];?></li>
+        <li>Genre: <?php echo $value['genre'];?></li>
+        <li>Alubm: <?php echo $value['album'];?></li>
     </ul>
  
 <?php
